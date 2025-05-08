@@ -1,10 +1,10 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "kitty-icat",        // Logo type: auto, builtin, small, file, etc.
-    "source": "/home/dee/.config/fastfetch/logo.jpg",      // Built-in logo name or file path
-    "width": 34,           // Width in characters (for image logos)
-    "height": 17,         // Height in characters (for image logos)
+    "type": "kitty-icat",  //Try kitty, kitty-direct, if "kitty-icat" doesn't work.      
+    "source": "/home/user/.config/fastfetch/logo.jpg",      
+    "width": 34,           
+    "height": 17,         
     },
 
   "modules": [
@@ -80,7 +80,8 @@
             "type": "custom",
             "format": "\u001b[90m└────────────────────────────────────────────────────┘"
         },
-        "break",
+        "break", 
+// Uncomment for adding Uptime and OS Age
 /*        {
             "type": "custom",
             "format": "\u001b[90m┌────────────────────Uptime────────────────────┐"
