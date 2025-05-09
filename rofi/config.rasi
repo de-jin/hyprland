@@ -1,0 +1,54 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: " ";
+    drun-display-format: "{icon} {name}";
+
+    font: "SF Pro Display Bold 14";
+}
+
+@theme "/dev/null"
+
+* {
+    f-color: #FFFFFF; f-alt: #787C99;
+    b-color: #11121D; b-alt: #444B6A;
+    background-color: @b-color;
+}
+
+window {
+    width: 25%;
+}
+
+element {
+    padding: 10;
+    text-color: @f-alt;
+}
+
+element.selected {
+    text-color: @f-color;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element-icon {
+    size: 28;
+}
+
+entry {
+    placeholder: "Search...";
+    padding: 10;
+    text-color: @f-alt;
+}
+
+listview {
+    lines: 6;
+}
+
+prompt {
+    padding: 10 0 0 10;
+    text-color: @f-alt;
+}
